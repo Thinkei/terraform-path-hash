@@ -3,7 +3,7 @@ variable "path" {
 }
 
 data "external" "hash" {
-  program = ["python", "${path.module}/hash.py"]
+  program = ["python3", "${path.module}/hash.py"]
 
   query = {
     path = var.path
